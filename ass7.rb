@@ -1,9 +1,8 @@
-string ="Rutubutani"
-char_count = Hash.new(0)
+puts "Enter Name"
+name=gets.chomp
+counts = Hash.new(0)
 
-string.each_char do |char|
-  char_count[char] += 1
+name.split('').each do |c|
+  counts[c] += 1
 end
-
-puts char_count 
-
+puts counts
